@@ -1,0 +1,973 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap";
+
+:root
+{
+	--main-color:#01275e
+}
+
+*
+{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:"Poppins",sans-serif
+}
+
+html
+{
+	scroll-behavior:smooth;
+	overflow-x: hidden;
+}
+
+header
+{
+	position:fixed;
+	display:flex;
+	background-color:var(--main-color);
+	top:0;
+	left:0;
+	width:100%;
+	padding:0 100px;
+	justify-content:space-between;
+	align-items:center;
+	z-index:10;
+	height:95px
+}
+
+header p
+{
+	position:absolute;
+	color:#fff;
+	font-weight:700;
+	font-size:24px;
+	left:240px
+}
+
+header a
+{
+	position:relative;
+	font-size:2.2rem;
+	color:#fff;
+	transition:.6s
+}
+
+header a img
+{
+	height:170px;
+	width:170px;
+}
+
+header ul
+{
+	position:relative;
+	display:flex;
+	justify-content:center;
+	align-items:center
+}
+
+header ul li
+{
+	position:relative;
+	list-style:none
+}
+
+header ul li a
+{
+	position:relative;
+	margin:0 15px;
+	letter-spacing:2px;
+	font-weight:500px;
+	transition:.6s;
+	font-size:20px;
+	text-decoration:none;
+	color:#fff
+}
+
+header ul li a.login {
+    background-color: rgba(164,214,255,0.63);
+    padding: 5px 10px;
+}
+
+/* .firstBackground
+{
+	background:url(/img/background3.jpg);
+	backdrop-filter: brightness(20%);
+	background-size:cover;
+    background-position: right;
+	position:relative;
+	width:100%;
+	height:100vh
+}
+
+.firstBackground button {
+    width: 200px;
+    background: none;
+    border: 3px solid var(--main-color);
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.firstBackground button a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.firstBackground button:hover {
+    background: lightblue;
+    transition: .3s;
+    cursor: pointer;
+} */
+
+.secondBackground
+{
+	background:url(/img/background.webp);
+	background-size:cover;
+	position:relative;
+	width:100%;
+	height:100vh;
+}
+
+.secondBackground button {
+    width: 200px;
+    background: none;
+    border: 3px solid var(--main-color);
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.secondBackground button a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.secondBackground button:hover {
+    background: lightblue;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.textBackground
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+	color:#fff;
+	animation-name: text;
+	animation-duration: 0.8s;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes text {
+	from {
+		transform: translateX(10%);
+	} to {
+		transform: translateX(0);
+	}
+}
+
+.textBackground h1
+{
+	font-size:7rem;
+	line-height:1.2;
+    max-width: 1200px;
+}
+
+.textBackground h1 span {
+	font-weight:700;
+	color:#a4d6ff;
+}
+
+.textBackground p
+{
+	font-size:1.8rem;
+	padding-top:30px
+}
+
+.textBackground p span
+{
+	background-color:#a4d6ff;
+	padding:5px;
+	font-weight:700;
+	color:var(--main-color)
+}
+
+.quemSomos
+{
+	background:rgba(164,214,255,0.63);
+	padding-bottom:40px
+}
+
+.textQuemSomos
+{
+	text-align:center;
+	padding:35px;
+	padding-top:70px
+}
+
+.textQuemSomos h1
+{
+	font-size:38px
+}
+
+.textQuemSomos p
+{
+	font-size:20px;
+	max-width:1200px;
+	margin:20px auto
+}
+
+.textQuemSomos::after
+{
+	content:"";
+	display:flex;
+	background:var(--main-color);
+	height:4px;
+	width:150px;
+	margin:40px auto
+}
+
+.cardQuemSomos
+{
+	padding:20px;
+	align-items:center;
+	margin:0 auto;
+	max-width:1250px;
+	display:flex;
+	margin-bottom:30px
+}
+
+.cardQuemSomos::before
+{
+	content:"";
+	display:block;
+	background:var(--main-color);
+	height:110px;
+	min-width:4px;
+	margin-right:10px
+}
+
+.textCardQuemSomos
+{
+	display:block;
+	margin-left:20px
+}
+
+.cardQuemSomos img
+{
+	height:100px;
+	width:100px;
+	padding:20px;
+	margin-left:20px
+}
+
+.cardQuemSomos h3
+{
+	margin-bottom:5px;
+	display:block;
+	font-size:22px
+}
+
+.cardQuemSomos p
+{
+	font-size:18px
+}
+
+.cardQuemSomos a {
+	color: #003886;
+}
+/* 
+#servicos
+{
+	position:absolute;
+	top:1720px;
+	visibility:hidden
+}
+
+.textServicos
+{
+	text-align:center;
+	padding:35px
+}
+
+.textServicos h1
+{
+	font-size:38px
+}
+
+.textServicos p
+{
+	font-size:20px;
+	margin:20px auto 0;
+	max-width:920px;
+}
+
+.textServicos span
+{
+	background-color:#a4d6ff;
+	padding:1px;
+	color:var(--main-color)
+}
+
+.textServicos::after
+{
+	content:"";
+	display:flex;
+	background:var(--main-color);
+	height:4px;
+	width:150px;
+	margin:40px auto 50px
+}
+
+.cards
+{
+	display:flex;
+	gap:100px;
+	justify-content:center;
+	flex-wrap:wrap;
+	margin-bottom:100px
+}
+
+.cardServico
+{
+	background:var(--main-color);
+	min-width:300px;
+	text-align:center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding:20px;
+	border-radius:8px;
+	color:#fff;
+	height: 350px;
+	cursor: pointer;
+	position: relative;
+	box-shadow: 5px 5px 10px 0 #00388696;
+}
+
+.cardServico img
+{
+	width:200px;
+	height:200px;
+	margin:-45px 0;
+}
+
+.cardServico h3
+{
+	margin-bottom:40px;
+	margin-top:10px
+}
+
+.cardServico p
+{
+	width: 100%;
+	height: 100%;
+	line-height:1.65;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius:8px;
+	background-color: #00183afb;
+	align-items: center;
+	display: none;
+}
+
+.cardServico:hover  p {
+	display: flex;
+	animation: card 0.5s ease-in-out;
+	padding: 30px;
+}
+
+@keyframes card {
+	from {
+		opacity: 0;
+		transform: translateX(-35%);
+	} to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.cardServico span
+{
+	background-color:#a4d6ff;
+	padding:2px;
+	color:var(--main-color)
+}
+
+.midImage
+{
+	background-image:url(/img/midImage.jpg);
+	background-size:cover;
+	position:relative;
+	width:100%;
+	height:550px;
+	margin-bottom:80px
+}
+
+.midImage h1
+{
+	color:#fff;
+	font-size:66px;
+	font-weight:700;
+	padding-top:120px;
+	text-align:center;
+	max-width:1100px;
+	margin:0 auto
+}
+
+.textIns
+{
+	text-align:center;
+	padding:35px
+}
+
+.textIns h1
+{
+	font-size:38px
+}
+
+.textIns::after
+{
+	content:"";
+	display:flex;
+	background:var(--main-color);
+	height:4px;
+	width:150px;
+	margin:40px auto 50px
+}
+
+.buttons {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.buttons button {
+	padding: 20px;
+	border: 3px solid #003886;
+	border-radius: 8px;
+	margin: 0px 30px 50px 30px;
+	background-color: transparent;
+	box-shadow: 0 0 5px 1px #64b9ff86;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: bold;
+	color: #003886;
+	font-size: 1.3rem;
+}
+
+.buttons button:hover {
+	box-shadow: 0 0 5px 1px #003886;
+	transition: .3s;
+}
+
+#depoimentos {
+	background-color: #a4d6ff;
+} */
+
+.textInstagram
+{
+	text-align:center
+}
+
+.textInstagram::after
+{
+	content:"";
+	display:flex;
+	background:var(--main-color);
+	height:4px;
+	width:150px;
+	margin:30px auto
+}
+
+.textInstagram span
+{
+	background-color:rgba(164,214,255,0.63);
+	padding:2px
+}
+
+.textInstagram h1
+{
+	font-size:38px;
+	margin:30px auto 20px auto
+}
+
+.textInstagram h3
+{
+	font-size:22px
+}
+
+.textInstagram p
+{
+	font-size:20px;
+	max-width:800px;
+	margin:0 auto;
+	margin-top:30px
+}
+
+.posts
+{
+	display:flex;
+	gap:80px;
+	justify-content:center;
+	flex-wrap:wrap;
+	margin:80px 0
+}
+
+.post
+{
+	background:#f1f1f1;
+	width:320px;
+	text-align:center;
+	border-radius:8px;
+	box-shadow:rgba(211,211,211,0.678) 2px 2px 6px
+}
+
+.post img
+{
+	width:250px;
+	margin:10px;
+	border-radius:4px;
+	margin-top:20px;
+	margin-bottom:20px
+}
+
+.post a
+{
+	text-decoration:none;
+	color:#fff;
+	background:var(--main-color);
+	padding:5px 15px;
+	border-radius:2px
+}
+
+.post p
+{
+	width:200px;
+	margin:0 auto;
+	margin-top:20px;
+	padding-bottom:15px;
+	text-align:left
+}
+
+.contato
+{
+	background:rgba(164,214,255,0.63)
+}
+
+.textContato
+{
+	margin:40px 0;
+	text-align:center
+}
+
+.textContato::after
+{
+	content:"";
+	display:flex;
+	background:var(--main-color);
+	height:4px;
+	width:150px;
+	margin:30px auto
+}
+
+.textContato h1
+{
+	font-size:38px;
+	margin:30px auto;
+	padding-top:60px
+}
+
+.textContato p
+{
+	font-size:20px;
+	max-width:800px;
+	margin:0 auto
+}
+
+.contatos
+{
+	display:flex;
+	margin:20px 0 0;
+	justify-content:center;
+	padding-bottom:80px;
+    text-align: center;
+}
+
+.contatos button {
+    width: 200px;
+    background: none;
+    border: 3px solid var(--main-color);
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.contatos button a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.contatos button:hover {
+    background: lightblue;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.whatsapp h1
+{
+	background:#64b9ff;
+	padding:5px;
+	color:var(--main-color)
+}
+
+.whatsapp p
+{
+	font-size:20px;
+	margin-top:15px;
+	margin-bottom:20px
+}
+
+.whatsapp span
+{
+	color:var(--main-color);
+	font-weight:700
+}
+
+.whatsapp a
+{
+	border-radius:6px;
+	padding:10px;
+	color:#fff;
+	text-decoration:none;
+	transition:.3s
+}
+
+footer
+{
+	background-color:var(--main-color);
+	padding:20px;
+	color:#fff
+}
+
+.footer
+{
+	margin:0 auto;
+	text-align:center
+}
+
+.footer h3 {
+    margin: 20px 0 10px 0;
+}
+
+.footer h4 {
+    margin: 0px 0 10px 0;
+}
+
+.footerLinks a img
+{
+	width:30px;
+	height:30px;
+	margin:5px
+}
+
+.footerEndereco
+{
+	margin-bottom:20px
+}
+
+#btn-mobile
+{
+	display:none
+}
+
+@media screen and (max-width: 1140px) {
+	#nav ul
+	{
+		display:block;
+		position:absolute;
+		width:100%;
+		top:95px;
+		right:0;
+		background:var(--main-color);
+		z-index:1000;
+		height:0;
+		transition:.6s;
+		visibility:hidden;
+		overflow-y:hidden
+	}
+	
+	#nav.active ul
+	{
+		height:calc(100vh - 95px);
+		visibility:visible
+	}
+	
+	header ul li
+	{
+		margin-bottom:20px;
+		padding-top:40px;
+		padding-left:40px;
+		padding-right:80px
+	}
+	
+	header ul li a
+	{
+		border-bottom:2px solid rgba(255,255,255,0.37);
+		display:block;
+		padding-bottom:15px
+	}
+	
+	#btn-mobile
+	{
+		display:flex;
+		padding:.5rem 1rem;
+		font-size:1rem;
+		border:none;
+		background:none;
+		cursor:pointer;
+		gap:.5rem;
+		font-size:20px;
+		color:#fff;
+		align-items:center
+	}
+	
+	#hamburguer
+	{
+		width:20px;
+		border-top:2px solid
+	}
+	
+	#hamburguer::after,#hamburguer::before
+	{
+		width:20px;
+		height:2px;
+		background-color:#fff;
+		content:"";
+		display:block;
+		margin-top:5px;
+		transition:.3s;
+		position:relative
+	}
+	
+	#nav.active #hamburguer
+	{
+		border-top-color:transparent
+	}
+	
+	#nav.active #hamburguer::after
+	{
+		transform:rotate(-135deg);
+		top:-7px
+	}
+	
+	#nav.active #hamburguer::before
+	{
+		transform:rotate(135deg)
+	}
+	
+	.midImage h1
+	{
+		font-size:60px;
+		padding-top:140px
+	}
+
+    .firstBackground
+{
+	background:url(/img/background3.jpg);
+    background-size: cover;
+	position:relative;
+	width:100%;
+	height:100vh
+}
+}
+
+@media screen and (max-width: 1000px) {
+	.contatos
+	{
+		display:flex;
+		flex-wrap:wrap
+	}
+	
+	.contatos form
+	{
+		padding-top:10px
+	}
+	
+	.whatsapp
+	{
+		margin:0 auto;
+		margin-top:80px;
+		text-align:center
+	}
+	
+	.textBackground h1
+	{
+		font-size:6rem;
+		margin-left:-50px
+	}
+	
+	.textBackground p
+	{
+		margin-left:-50px
+	}
+	
+	.midImage h1
+	{
+		font-size:54px;
+		padding-top:160px
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.textBackground h1
+	{
+		font-size:5.5rem
+	}
+	
+	.midImage h1
+	{
+		font-size:50px;
+		padding-top:170px
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.cardQuemSomos p
+	{
+		font-size:14px
+	}
+	
+	.textBackground h1
+	{
+		font-size:80px
+	}
+	
+	.textBackground p
+	{
+		font-size:24px
+	}
+	
+	.textBackground
+	{
+		margin-left:25px
+	}
+	
+	header
+	{
+		padding:0 10px 0 0
+	}
+	
+	header p
+	{
+		left:120px
+	}
+	
+	header img
+	{
+		margin-left:-20px
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.textBackground h1
+	{
+		font-size:72px
+	}
+	
+	.principalBackground
+	{
+		position:relative;
+		width:100%;
+		height:100vh;
+		background:url(/img/background.jpg) no-repeat cover
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.textBackground
+	{
+		margin-left: 0px
+	}
+	
+	.textBackground h1
+	{
+		font-size:4rem
+	}
+	
+	.midImage h1
+	{
+		font-size:40px;
+		padding-top:180px
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.textBackground h1
+	{
+		font-size:3.7rem
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.textBackground h1
+	{
+		font-size:51px
+	}
+	
+	.textBackground p
+	{
+		font-size:20px
+	}
+	
+	header p
+	{
+		display:none
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.textBackground h1
+	{
+		font-size:45px;
+		margin-top:50px
+	}
+	
+	.textBackground p
+	{
+		font-size:18px
+	}
+	
+	.contatos form input
+	{
+		max-width:280px
+	}
+	
+	.midImage h1
+	{
+		font-size:54px;
+		padding-top:160px
+	}
+	
+	.contatos form textarea
+	{
+		width:280px
+	}
+	
+	.midImage h1
+	{
+		font-size:35px;
+		padding-top:190px
+	}
+}
